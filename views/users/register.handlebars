@@ -1,0 +1,32 @@
+    <head>
+        <title>Register</title>
+        <link type="text/css" rel="stylesheet" href = "/css/register.css">
+    </head>
+    <body>
+        <div class="reg-form" id="flow1">
+            <form action="/users/add" method="post">
+                <input id="email" name="email" placeholder="Email"><br>
+                <input id="name" name="name" placeholder="Name" required><br>
+                <input id="password" type = "password" name="password" placeholder="Password"required><br>
+                <input id="dob" type = "string" name="dob" placeholder="Date Of Birth" required>
+                <input type = "submit" value="Sumit">
+            </form>
+        </div>
+
+    </body>
+
+    <script>
+        let flowReg = ()=>{
+            document.getElementById('flow1').style.display = 'block';
+            document.getElementById('flow2').style.display = 'none';
+        }
+        let flowArtists = ()=>{
+            document.getElementById('flow1').style.display = 'none';
+            document.getElementById('flow2').style.display = 'block';
+        }
+        let flowGenre = ()=>{
+            document.getElementById('flow2').style.display = 'none';
+            document.getElementById('flow3').style.display = 'block';
+        }
+    }
+    </script>
