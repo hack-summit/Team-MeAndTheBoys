@@ -17,6 +17,7 @@ app.use(bodyParser.json());
 //load routes
 const users = require("./routes/users");
 const chat = require("./routes/chat");
+const navapp = require("./routes/navapp");
 //static files
 app.use(express.static(__dirname + "/public"));
 
@@ -74,4 +75,5 @@ app.get("/", (req, res) => {
 //use routes
 app.use("/users", users);
 app.use("/chat", chat);
+app.use("/navapp", navapp);
 
